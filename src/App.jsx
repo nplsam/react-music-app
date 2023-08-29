@@ -1,32 +1,18 @@
 import React, { useState } from 'react'
 import './App.css'
 
-function likeButton() {
-  const [like, setLike] = useState("Like")
+function LikeButton() {
+  const [liked, setLiked] = useState(false);
 
-  const handleLikedButton = () => {
-    setLike(previous => "Unlike")
-  }
-
-  const handleUnlikedButton = () => {
-    setLike(previous => "Like")
-  }
-
-  const handleButton = () => {
-    if (like === "Like") {
-      handleLikedButton()
-    } else {
-      handleUnlikedButton()
-    }
-  }
+  const toggleLike = () => {
+    setLiked(prevLiked => !prevLiked);
+  };
 
   return (
-    <>
-    <button id="like-btn"
-      onClick={handleButton}
-    >{like}</button>
-    </>
-  )
+    <button id="like-btn" onClick={toggleLike}>
+      {liked ? '❤️' : '♡'}
+    </button>
+  );
 }
 
 const nujabesData = {
@@ -65,6 +51,7 @@ function List({ items, type }) {
               <h3>{item.name}</h3>
               <p>Release Date: {item.releaseDate}</p>
             </div>
+            <span id="right">  <LikeButton /></span>
           </li>
         ))}
       </ul>
