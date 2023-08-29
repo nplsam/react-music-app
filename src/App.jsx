@@ -24,10 +24,13 @@ const nujabesData = {
   songs: [
     { name: 'Feather', releaseDate: '2003', coverArt: 'https://i1.sndcdn.com/artworks-hUmiSLY9mwWC2ni3-0ZJPwA-t500x500.jpg' },
     { name: 'Aruarian Dance', releaseDate: '2001', coverArt: 'https://i1.sndcdn.com/artworks-McD80meEq7vw8YwU-ZQt8Yw-t500x500.png' },
+    { name: 'Lady Brown', releaseDate: '2003', coverArt: 'https://i.discogs.com/m-VRyqUDMor9mMTQqmePa1IZuaVEYhXx9gn7DWvJacc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NjYz/OC0xNjE5NzYwNTI3/LTM3NDkuanBlZw.jpeg' },
+
   ],
   albums: [
     { name: 'Modal Soul', releaseDate: '2005', coverArt: 'https://lastfm.freetls.fastly.net/i/u/ar0/e605e0031a208775b7ac76f8c34290e3.jpg' },
-    { name: 'Metaphorical Music', releaseDate: '2003', coverArt: 'https://morrowrecords.com/cdn/shop/products/nujabesmetaphorical.jpg?v=1641335650' },
+    { name: 'Metaphorical Music', releaseDate: '2003', coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/MetaphoricalMusic.jpg/220px-MetaphoricalMusic.jpg' },
+    { name: 'Spiritual State', releaseDate: '2011', coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Nujabes-spiritual-state.jpg/220px-Nujabes-spiritual-state.jpg' },
   ],
 };
 
