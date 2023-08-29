@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import NewsletterSignupForm from './NewsletterSignupForm'
+import NewsletterSignupForm from './Newsletter'
 
 
 function LikeButton() {
@@ -62,8 +62,17 @@ function List({ items, type }) {
 }
 
 function App() {
+  const [mode, setMode] = useState('light');
+
+  const toggleMode = () => {
+    setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className="app">
+    <div className={`app ${mode}-mode`}>
+      <button className="mode-toggle" onClick={toggleMode}>
+        {mode === 'light' ? '🌙' : '🌞'}
+      </button>
       <ArtistInfo
         name={nujabesData.name}
         musicType={nujabesData.musicType}
