@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
+import NewsletterSignupForm from './NewsletterSignupForm'
+
 
 function LikeButton() {
   const [liked, setLiked] = useState(false);
@@ -69,6 +71,7 @@ function App() {
       />
       <List items={nujabesData.songs} type="Popular Songs" />
       <List items={nujabesData.albums} type="Albums" />
+      <NewsletterSignupForm />
     </div>
   );
 }
