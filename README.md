@@ -1,5 +1,7 @@
 # Basic Music Portfolio App
 
+Welcome! Tribute to Nujabes
+
 ## Installation 
 
 - `git clone` this repo onto your local machine
