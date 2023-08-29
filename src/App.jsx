@@ -19,7 +19,7 @@ function LikeButton() {
 
 const nujabesData = {
   name: 'Nujabes',
-  musicType: 'Chillhop / Jazz-Hop',
+  musicType: 'Lo-fi Hip Hop / Jazz',
   introduction: 'Jun Seba, better known by his stage name Nujabes, was a Japanese record producer, DJ, composer, and arranger. He is renowned for his unique blend of hip-hop and jazz influences in his music.',
   songs: [
     { name: 'Feather', releaseDate: '2003', coverArt: 'https://i1.sndcdn.com/artworks-hUmiSLY9mwWC2ni3-0ZJPwA-t500x500.jpg' },
@@ -42,7 +42,7 @@ function ArtistInfo({ name, musicType, introduction }) {
   return (
     <div className="artist-info">
       <h1>{name}</h1>
-      <p>Music Type: {musicType}</p>
+      <p>Genre: {musicType}</p>
       <p>{introduction}</p>
     </div>
   );
