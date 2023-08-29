@@ -1,8 +1,12 @@
-# React + Vite
+# Basic Music Portfolio App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation 
 
-Currently, two official plugins are available:
+- `git clone` this repo onto your local machine
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
+
+- cd into repo locally
+- `npm install` to install necessary packages
+- `npm run dev` to start app
+- navigate to http://localhost:5173
