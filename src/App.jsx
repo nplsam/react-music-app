@@ -1,21 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import NewsletterSignupForm from './Newsletter'
-
-
-function LikeButton() {
-  const [liked, setLiked] = useState(false);
-
-  const toggleLike = () => {
-    setLiked(prevLiked => !prevLiked);
-  };
-
-  return (
-    <button id="like-btn" onClick={toggleLike}>
-      {liked ? '❤️' : '♡'}
-    </button>
-  );
-}
+import { NewsletterSignupForm, List, ArtistInfo } from './components'
 
 const nujabesData = {
   name: 'Nujabes',
@@ -37,36 +22,6 @@ const nujabesData = {
     { name: 'Spiritual State', releaseDate: '2011', coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Nujabes-spiritual-state.jpg/220px-Nujabes-spiritual-state.jpg' },
   ],
 };
-
-function ArtistInfo({ name, musicType, introduction }) {
-  return (
-    <div className="artist-info">
-      <h1>{name}</h1>
-      <p>Genre: {musicType}</p>
-      <p>{introduction}</p>
-    </div>
-  );
-}
-
-function List({ items, type }) {
-  return (
-    <div className="item-list">
-      <h2>{type}</h2>
-      <ul className="horizontal-list">
-        {items.map(item => (
-          <li key={item.name} className="horizontal-list-item">
-            <img src={item.coverArt} alt={item.name} />
-            <div className="item-content">
-              <h3>{item.name}</h3>
-              <p>Release Date: {item.releaseDate}</p>
-            </div>
-            <span id="right">  <LikeButton /></span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
 
 function App() {
   const [mode, setMode] = useState('dark');
@@ -92,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
